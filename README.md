@@ -1,82 +1,91 @@
-api.gouv.fr catalogue les API offertes par les administrations centrales, les collectivités territoriales, les établissements publics… À chaque API est associée une courte description fonctionnelles, une documentation technique, les modalités d'accès, d'éventuelles ressources supplémentaires et surtout des services qui l'utilisent.
+# api.gouv.fr
 
+[![Build, lint & tests](https://github.com/betagouv/api.gouv.fr/actions/workflows/pre-merge.yml/badge.svg)](https://github.com/betagouv/api.gouv.fr/actions/workflows/pre-merge.yml)
+[![Accessibilité](https://github.com/betagouv/api.gouv.fr/actions/workflows/check-accessibility.yml/badge.svg)](https://github.com/betagouv/api.gouv.fr/actions/workflows/check-accessibility.yml)
+[![Liens morts](https://github.com/betagouv/api.gouv.fr/actions/workflows/check-broken-links.yml/badge.svg)](https://github.com/betagouv/api.gouv.fr/actions/workflows/check-broken-links.yml)
+
+**api.gouv.fr** catalogue les API produites par les administrations centrales, les
+collectivités territoriales, les établissements publics… Chaque API est
+associée à une courte description fonctionnelle, une documentation technique,
+les modalités d'accès, d'éventuelles ressources supplémentaires et surtout des
+liens vers les services qui l'utilisent.
+
+## Derniers déploiements
+
+[![Deploy - Staging](https://github.com/betagouv/api.gouv.fr/actions/workflows/deploy-staging.yml/badge.svg)](https://github.com/betagouv/api.gouv.fr/actions/workflows/deploy-staging.yml)
+
+[![Deploy - Production](https://github.com/betagouv/api.gouv.fr/actions/workflows/deploy-production.yml/badge.svg)](https://github.com/betagouv/api.gouv.fr/actions/workflows/deploy-production.yml)
 
 ## Public visé
 
-api.gouv.fr s'adresse avant tout aux créateurs de services, les consommateurs d'API. Pour cela, nous facilitons la découverte, la compréhension et l'accès aux API et à leurs producteurs.
+api.gouv.fr s'adresse avant tout aux créateurs de services, les consommateurs
+d'API. Pour cela, nous facilitons la découverte, la compréhension et l'accès
+aux API et à leurs producteurs.
 
 Les fournisseurs, de leur côté, ont avec ce catalogue un moyen simple de faire connaître leurs API.
 
+## Fournisseur d'API ? Envie de référencer une nouvelle API ?
 
-### Fournisseur d'API ? [Ajoutez votre API](https://github.com/betagouv/api.gouv.fr/blob/master/CONTRIBUTING.md#ajouter-une-api) !
+[👉 Ajoutez votre API](https://api.gouv.fr/nouvelle-api) !
 
-### Réutilisateur d'API ? [Ajoutez votre service](https://github.com/betagouv/api.gouv.fr/blob/master/CONTRIBUTING.md#ajouter-un-service) !
+## Comment ça marche ?
 
+### Prérequis
 
-## Sous-domaines
+[Node.js](https://nodejs.org/en/) >= 16
 
-Le nom de domaine `api.gouv.fr` héberge un catalogue d'API et de services les réutilisant.
+### Serveur de développement
 
-Les sous-domaines en `*.api.gouv.fr` hébergent les API cataloguées sur `api.gouv.fr` et maintenues par la <abbr title="Direction interministérielle du numérique et du système d'information et de communication">DINSIC</abbr>.
+Cette application utilise [Next.js](https://github.com/zeit/next.js).
 
+1. Installer les dépendances
 
-## Installation locale
-
-Il est nécessaire de récupérer les sources avec la commande :
-
-``` sh
-git clone https://github.com/betagouv/api.gouv.fr.git
-cd api.gouv.fr
+```bash
+npm i
 ```
 
-Il existe ensuite deux manières de lancer le site sur sa machine :
+2. Variables d’environnement
 
-* Utiliser Jekyll directement.
-* Utiliser Docker.
+Afin de configurer le projet correctement, il est conseillé de créer un fichier `.env` avec les variables d’environnement nécessaires à l’application.
 
-Ces deux méthodes sont indépendantes et détaillées ci-dessous.
+`.env` permet de persister les variables d’environnement de développement dans un fichier plutôt que de les définir dans le shell, mais les deux fonctionnent. Cela fonctionne avec [dotenv](https://github.com/motdotla/dotenv) et [next-runtime-dotenv](https://github.com/tusbar/next-runtime-dotenv).
 
-### Jekyll
+Copier le fichier de configuration
 
-Le site utilise [Jekyll], un générateur de site statique en [Ruby].
+```bash
+cp .env.sample .env
+```
 
-#### Dépendances
+3. Lancer le serveur de développement
 
-* [Ruby](https://www.ruby-lang.org/en/downloads/). Il est recommandé d'utiliser un système de virtualisation comme [RVM](https://rvm.io/) ou [RbEnv](https://github.com/rbenv/rbenv). La version à utiliser est : `2.2.3`
- * [bundle](http://bundler.io/). La commande a lancer est : `gem install bundle`
+```bash
+npm run dev
+```
 
-#### Commandes
+Par défaut, il écoutera sur le port `3000`, pour changer, utiliser `npm run dev -p 4242`.
 
-* `bundle install` pour installer toutes les dépendances nécessaires
-* `bundle exec jekyll serve` pour lancer un serveur de développement. Il suffit de se rendre sur l'URL indiquée à l'exécution de la commande.
-* `bundle exec jekyll build` pour générer le site dans le répertoire `_site`.
-* `bundle update` pour mettre à jour les dépendances et le `Gemfile.lock`
+### Build de production
 
-### Docker
+Cette application utilise [Next.js](https://github.com/zeit/next.js).
 
-#### Dépendances
+1. Installer les dépendances
 
-* [Docker](https://docs.docker.com/engine/installation/) (version > 1.10)
-* [docker-compose](https://docs.docker.com/compose/install/) (version > 1.6)
+```bash
+npm i
+```
 
-#### Commandes
+2. Générer les bundles de production
 
-* `docker-compose up`. Il suffit de se rendre sur l'URL indiquée à l'exécution de la commande.
+```bash
+npm run build
+```
 
-## Déploiement
+3. Lancer le serveur de production
 
-### Production
+```bash
+PORT=3000 npm run start
+```
 
-Pour déployer ce site, il suffit de pousser les modifications vers la branche `master` sur [github.com/betagouv/api.gouv.fr](https://github.com/betagouv/api.gouv.fr). Cette branche étant protégée, il convient de faire [des pull requests](https://help.github.com/articles/using-pull-requests/) car le projet utilise [GitHub flow](https://guides.github.com/introduction/flow/).
+### Preview apps
 
-
-### Développement
-
-Chaque pull request est déployé dans des [review app](https://devcenter.heroku.com/articles/github-integration-review-apps) sur [Heroku].
-Le compte utilisé est le compte de [Thibaut Géry](https://github.com/ThibautGery/)
-
-
-
-[Jekyll]: http://jekyllrb.com/
-[Ruby]: https://www.ruby-lang.org
-[heroku]: https://dashboard.heroku.com/
+Chaque pull request est déployé dans des [review app](https://devcenter.heroku.com/articles/github-integration-review-apps) sur [Heroku](https://dashboard.heroku.com/)

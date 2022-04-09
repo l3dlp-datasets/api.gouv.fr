@@ -1,11 +1,24 @@
-_site
-.sass-cache
-.jekyll-metadata
+
+.vscode/
+# MacOS
 .DS_Store
-Gemfile.lock
 
-# Bundler
-.bundle
+# Node
+node_modules
 
-# Ruby
-.ruby-gemset
+# Next
+.next
+
+# Environment config
+.env*
+!.env.sample
+
+# intellij folder
+.idea
+
+public/url-list.txt
+public/sitemap.xml
+
+# direnv
+.nvmrc
+.envrc
