@@ -26,7 +26,7 @@ access_page:
       - Une collectivité ou une administration
     is_eligible: 1
     description: |
-      Vous pouvez réaliser une demande d'accès à l'API.
+      Vous pouvez réaliser une demande d'habilitation à l'API.
 
       <NextSteps />
       <Button href="https://datapass.api.gouv.fr/api-pro-sante-connect">Remplir une demande</Button>
@@ -58,9 +58,10 @@ uptime: 99.8
 contact_link: prosanteconnect.editeurs@esante.gouv.fr
 doc_tech_external: https://integrateurs-cps.asipsante.fr/pages/prosanteconnect/documentation-fs
 last_update: 22/03/2021
----
+content_intro: | 
+  L‘API Pro Santé Connect permet à des administrations, des éditeurs de logiciels ou des entreprises d’ajouter un bouton Pro Santé Connect, pour recueillir des données d’identité fiables et ainsi identifier les utilisateurs de leur service en ligne (en vue d’une entrée en relation ou connexion).
 
-L‘API Pro Santé Connect permet à des administrations, des éditeurs de logiciels ou des entreprises d’ajouter un bouton Pro Santé Connect, pour recueillir des données d’identité fiables et ainsi identifier les utilisateurs de leur service en ligne (en vue d’une entrée en relation ou connexion).
+---
 
 ### À quoi sert cette API ?
 
