@@ -1,6 +1,6 @@
 ---
 title: Tarification sociale et solidaire des transports
-tagline: Vous êtes une collectivité, un opérateur ou un éditeur de logiciel ? Appliquez facilement un tarif de vos titres de transport adapté à la situation de vos usagers, en utilisant les données de l'API Particulier.
+tagline: Vous êtes une collectivité, un opérateur ou un éditeur de logiciel ? Appliquez facilement un tarif de vos titres de transport adapté à la situation de vos usagers, en utilisant les API.
 tags: cas usage, api particulier, transport
 image: transport.jpg
 noindex: false # this page will appear on Google
@@ -31,12 +31,12 @@ Une utilisation logicielle au guichet est aussi possible.
 
 ## Comment ça marche ?
 
-Les API sont disponibles - que les téléservices utilisent  franceConnect ou non. 
+Les API sont disponibles - que les téléservices utilisent  franceConnect ou non.
 
 🔎 En savoir plus sur [les API FranceConnectées](https://api.gouv.fr/guides/api-franceconnectees)
 
 Un téléservice peut aussi proposer deux modes de connection, l’un avec FranceConnect, l’autre sans.
-Dans ce dernier cas il convient d’utiliser [l’API particulier](https://api.gouv.fr/les-api/api-particulier ).  
+Dans ce dernier cas il convient d’utiliser [l’API particulier](https://api.gouv.fr/les-api/api-particulier ).
 
 **🔍 Consulter [l'étude réalisée par DINUM auprès de 20 AOM](/resources/rapport-gart.pdf) visant à répertorier l'ensemble des besoins de pièces justificatives**
 
@@ -44,9 +44,11 @@ Dans ce dernier cas il convient d’utiliser [l’API particulier](https://api.g
 
 ## Les données disponibles
 
+⚠️ **Les données fiscales des particuliers ne sont plus disponibles via l'API Particulier, produit opéré par la DINUM.** Pour obtenir ces données (ex : le revenu fiscal de référence, les informations sur les déclarants et le nombre de parts du foyer fiscal), veuillez désormais interroger directement l'API dédiée à l'accès aux données fiscales des particuliers [**l'API Impôt particulier** de la DGFiP](https://api.gouv.fr/les-api/impot-particulier).
+
 | Nom       | Description                                         |Statut   |Dispo sans FranceConnect | Administration|
 | --------- | --------- |----------------------------------------------------|-----------------|--------- |
-| [API Impôt particulier](https://api.gouv.fr/les-api/impot-particulier)  | Revenus déclarés auprès de l'administration fiscale |✅ En production   |[API Impôt particulier](https://api.gouv.fr/les-api/impot-particulier) - [API  particulier](https://api.gouv.fr/les-api/api-particulier)   |DGFiP   |
+| [API Impôt particulier](https://api.gouv.fr/les-api/impot-particulier)  | Revenus déclarés auprès de l'administration fiscale |✅ En production   |[API Impôt particulier](https://api.gouv.fr/les-api/impot-particulier) -  |DGFiP   |
 | [API Indemnités Journalières](https://api.gouv.fr/les-api/api-indemnites-journalieres-cnam)   | Montant des indemnités journalières de l'Assurance Maladie payé à un assuré sur une période|✅ En production   |Non prévu |CNAM |
 | [API de droits à l'Assurance Maladie](https://api.gouv.fr/les-api/api_ameli_droits_cnam) | Droits d’un individu ou d’une famille (enfants rattachés), gérés par le régime général de l’Assurance Maladie |✅ En production  |Non prévu |CNAM   |
 | [API Statut étudiant](https://api.gouv.fr/les-api/api-statut-etudiant)| Statut de l’inscription dans un établissement de l’enseignement supérieur |✅ En production  |[API  particulier](https://api.gouv.fr/les-api/api-particulier)|MESRI   |

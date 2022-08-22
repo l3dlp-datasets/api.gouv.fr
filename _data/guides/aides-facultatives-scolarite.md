@@ -17,7 +17,7 @@ api:
 
 Communes, départements, régions ont mis en place des aides sociales pour aider les familles à financer la scolarité des enfants ou des jeunes.
 
-Ces aides facultatives prennent différentes formes : aide financière, fourniture de matériel informatique, bon d’achat pour des livres. Elle sont conditionnées à certains critères sociaux.  
+Ces aides facultatives prennent différentes formes : aide financière, fourniture de matériel informatique, bon d’achat pour des livres. Elle sont conditionnées à certains critères sociaux.
 
 Plusieurs API permettent, dans les téléservices (formulaire de demande en ligne) utilisés pour récolter les demandes d’aide, d’éviter aux parents ou aux étudiants d’avoir à justifier de leurs statuts ou de leurs revenus.
 
@@ -47,11 +47,13 @@ Ces API sont principalement utilisées dans la cadre de services ligne qui peuve
 
 | Nom de la donnée | Disponibilité API Particulier | Disponibilité France Connect |
 | --- | --- | --- |
-| Données fiscales (DGFiP) | [✅ API Particulier](/les-api/api-particulier) | [✅ Données fiscales (DGFiP)](/les-api/impot-particulier) |
+| Données fiscales (DGFiP) | ❌ Disponible sur l'[API Impôt particulier - DGFIP](/les-api/impot-particulier) | [✅ Données fiscales (DGFiP)](/les-api/impot-particulier) |
 | Quotient famillial (CNAF) | [✅ API Particulier](/les-api/api-particulier) | ⌛️ Fin 2022 |
 | Statut étudiant | [✅ API Particulier](/les-api/api-particulier) | [✅ API Statut étudiant](/les-api/api-statut-etudiant) |
 | Statut étudiant boursier | [✅ API Particulier](/les-api/api-particulier) | [✅ API Statut étudiant boursier](/les-api/api-statut-etudiant-boursier) |
 | Scolarité | ⌛️ Fin 2022 | Non prévue |
+
+⚠️ **Les données fiscales des particuliers ne sont plus disponibles via l'API Particulier, produit opéré par la DINUM.** Pour obtenir ces données (ex : le revenu fiscal de référence, les informations sur les déclarants et le nombre de parts du foyer fiscal), veuillez désormais interroger directement l'API dédiée à l'accès aux données fiscales des particuliers [**l'API Impôt particulier** de la DGFiP](https://api.gouv.fr/les-api/impot-particulier).
 
 ## Comment accéder aux données ?
 
