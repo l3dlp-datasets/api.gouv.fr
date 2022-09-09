@@ -67,25 +67,31 @@ content_intro: |
   API Particulier permet aux entités administratives d'**accéder aux données et aux documents administratifs des particuliers**, afin de simplifier leurs démarches.
 
   Ce bouquet de données provenant d'administrations différentes est utilisable :
-  - ✅ dans le cadre des démarches en ligne proposées aux usagers (formulaires en ligne ou téléservices) ;
-  - ✅ dans les logiciels métiers utilisés par les agents habilités en guichet.
-  - ❌ l'API particulier n'est pas encore France connectée, de fait, même si votre service intègre le bouton France Connect, les informations de vos usagers nécessaires à l'appel de l'API (comme par exemple le numéro d'allocataire ou la date de naissance) et détenues dans l'identifiant France connect, devront transiter dans vos systèmes.
+
+  - dans le cadre des démarches en ligne proposées aux usagers (formulaires en ligne ou téléservices) ;
+  - dans les logiciels métiers utilisés par les agents habilités en guichet.
+  - l'API particulier n'est pas encore France connectée, de fait, même si votre service intègre le bouton France Connect, les informations de vos usagers nécessaires à l'appel de l'API (comme par exemple le numéro d'allocataire ou la date de naissance) et détenues dans l'identifiant France connect, devront transiter dans vos systèmes.
 
   ### À quoi sert l’API Particulier ?
 
   **En tant qu'administration ou collectivité**, en intégrant la brique API Particulier dans votre système d’information ou votre site internet :
-
-  - Vous n’avez **plus besoin de demander certains justificatifs** aux particuliers&nbsp;;
-  - Vous n’avez pas de vérification supplémentaire à réaliser car les **informations sont certifiées**&nbsp;;
-  - Vous accédez avec un seul compte aux **données de différents fournisseurs** : la Caisse nationale des allocations familiales (CNAF), Pôle-emploi, le ministère de l'enseignement supérieur et de la recherche (MESR) et enfin le Centre national des œuvres universitaires et scolaires (Cnous).
+  
+  ✅ Vous n’avez **plus besoin de demander certains justificatifs** aux particuliers ;
+  
+  ✅ Vous n’avez pas de vérification supplémentaire à réaliser car les **informations sont certifiées** 
+  
+  ✅ Vous accédez avec un seul compte aux **données de différents fournisseurs** : 
+    la Caisse nationale des allocations familiales (CNAF), Pôle-emploi, le ministère de l'enseignement supérieur et de la recherche (MESR) et enfin le Centre national des œuvres universitaires et scolaires (Cnous).
 
     <Quote logo="/images/guides/clamart.svg" who='Ville de Clamart' title='Aurélie Coutant'>
     Maintenant que le traitement est automatisé, nous avons enfin le temps de mieux accompagner les usagers en difficulté, de leur expliquer plus largement les prestations auxquelles ils peuvent avoir accès.
     </Quote>
 
   **C'est aussi plus simple pour vos usagers !**
-  - Leur démarche est réalisable 100% en ligne autant qu'en guichet.
-  - Ils n'ont plus besoin de rassembler et saisir les documents ou informations déjà connues de l'administration.
+
+  ✅ Leur démarche est réalisable 100% en ligne autant qu'en guichet ;
+  
+  ✅ Ils n'ont plus besoin de rassembler et saisir les documents ou informations déjà connues de l'administration.
 
     <Quote logo="/images/guides/clamart.svg" who='Ville de Clamart' title='Simon-Pierre Chalvidan'>
     En 2014, nos usagers prenaient une demi-journée de congés pour effectuer leurs démarches en mairie. Aujourd'hui, ils les effectuent en ligne en 5 minutes.
@@ -101,10 +107,10 @@ content_intro: |
   | **Statut étudiant** | MESR | Statut, établissement<br>[📖 Documentation](#doc-api-statut-etudiant-mesr) | ✅                      |
   | **Statut étudiant boursier** | Cnous | Statut, niveau de bourse<br>[📖 Documentation](#doc-api-statut-etudiant-boursier-cnous)       | ✅      |
   | **Statut demandeur d'emploi** | Pôle Emploi |Statut et catégorie (A,B,C,D)<br>[📖 Documentation](#doc-api-statut-demandeur-emploi-pole-emploi)      | ✅          |
-  | **Indemnités demandeur d'emploi** | Pôle Emploi | / | Juin 2023               | _En cours de test_          |
-  | **Statut CSS**              |  / | /| Juillet 2023               |
-  | **Statut RSA**                 |  /  | /| Juillet 2023               |
-  | **Statut élève scolarisé**        |  /| / | Fin 2023                |
+  | **Indemnités demandeur d'emploi** | Pôle Emploi | Montants et types d'indemnisations | T4 2022               |
+  | **Statut CSS**              |  Direction de la Sécurité Sociale | oui / non | T4 2022               |
+  | **Statut RSA**                 |Direction de la Sécurité Sociale | oui / non| T4 2022               |
+  | **Statut élève scolarisé**        | Ministère de l'éducation nationale| Attestation de scolarité et statut boursier | T4 2022                |
 
 ⚠️ **Les données fiscales des particuliers ne sont plus disponibles via l'API Particulier, produit opéré par la DINUM.** Pour obtenir ces données (ex : le revenu fiscal de référence, les informations sur les déclarants et le nombre de parts du foyer fiscal), veuillez désormais interroger directement l'API dédiée à l'accès aux données fiscales des particuliers [**l'API Impôt particulier** de la DGFiP](https://api.gouv.fr/les-api/impot-particulier). Cette API est aussi compatible avec France Connect.
 
@@ -117,8 +123,8 @@ L'API Particulier n'est pas France connectée. Certaines des données de l'API P
   | **Quotient familial CAF** - CNAF | _Disponible fin 2023_         |
   | **Statut étudiant** - MESR |  ✅ [API Statut Étudiant](les-api/api-statut-etudiant) |
   | **Statut étudiant boursier** - Cnous   | ✅ [API Statut Étudiant boursier](les-api/api-statut-etudiant-boursier)                      |
-  | **Statut demandeur d'emploi** - Pôle Emploi | _En cours de test_          |
-
+  | **Statut demandeur d'emploi** - Pôle Emploi | ✅ [API statut demandeur d'emploi](les-api/api-statut-demandeur-emploi)   |
+  | **Indemnisation Pôle emploi** - Pôle Emploi | ✅ [API indemnisation Pôle emploi](les-api/api-indemnisation-pole-emploi)       |
 
 🔎 En savoir plus sur [les API](https://api.gouv.fr/guides/api-definition) et les [API France Connectées](https://api.gouv.fr/guides/api-franceconnectees).
 
