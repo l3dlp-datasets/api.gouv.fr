@@ -347,15 +347,58 @@
       what: Mon entreprise, par l'URSSAF
       path: /les-api/api-mon-entreprise
   9:
+    - type: INFO
+      what: |
+        Mise à jour de [l'API Géo](/les-api/api-geo) : il est désormais possible (entre autres) de récupérer les contours des EPCI et la localisation des mairies des communes.
+        [Voir le release complet](https://github.com/etalab/api-geo/releases/tag/v2.2.0)
+    - type: ADD_API
+      what: Ecoulement des cours d'eau, par Eau France
+      path: /les-api/api_hubeau_onde
+    - type: ADD_API
+      what: Démarches du Ministère de la culture
+      path: /les-api/api-demarches-ministere-culture
+    - type: ADD_API
+      what: Base nationale des défibrillateurs, par le Ministère de la Santé
+      path: /les-api/api-defibrillateurs
+    - type: ADD_API
+      what: Services publics plus - structures
+      path: /les-api/api-services-publics-plus-structures
+    - type: ADD_API
+      what: Services publics plus - expériences
+      path: /les-api/api-services-publics-plus-experiences
+    - type: ADD_API
+      what: Data subventions, par la DINUM
+      path: /les-api/api-data-subventions
+  10:
+    - type: ADD_API
+      what: Mirabel (revues), par Sciences Po Lyon
+      path: /les-api/api-mirabel
+    - type: ADD_API
+      what: Ma Sécurité, par le Service des Technologies et des Systèmes d'Information de la Sécurité Intérieure
+      path: /les-api/api-ma-securite
+    - type: ADD_API
+      what: Rendez-vous permis, par le Ministère de l'Intérieur
+      path: /les-api/api-permis-conduire
+    - type: ADD_API
+      what: Données locales de consommation d'énergie, par le SDES
+      path: /les-api/api-donnees-locales-energie
+    - type: ADD_API
+      what: Données ouvertes d'Enedis, par Enedis
+      path: /les-api/api-donnees-ouvertes-enedis
+  11:
+    - type: ADD_API
+      what: Sesali, par l'Agence du Numérique en Santé
+      path: /les-api/api-sesali
+    - type: ADD_API
+      what: Accès Libre, par le Ministère de la Transition Ecologique
+      path: /les-api/api-acces-libre
+  12:
+    - type: ADD_API
+      what: Données foncières par le CEREMA
     - type: ADD_API
       what: Prestations sociales par la Direction de la Sécurité Sociale
     - type: ADD_API
       what: Historique d'un véhicule (HistoVec), par le Ministère de l'Intérieur
-    - type: ADD_API
-      what: Rendez-vous permis, par le Ministère de l'Intérieur
-  12:
-    - type: ADD_API
-      what: Données foncières par le CEREMA
 2023:
   1:
     - type: ADD_API
