@@ -1,5 +1,5 @@
 export const pathEligible = {
-    question: 'Quel est l’éditeur de logiciel qui implémentera l’API ?',
+    question: "Quel est l’éditeur de logiciel qui implémentera l’API ?",
     choiceTree: [
         {
         choices: [
@@ -68,15 +68,15 @@ export const pathEligible = {
         choices: [
              'Odyssée Informatique',
         ],
-        answer: `<br/><Button href="https://datapass.api.gouv.fr/api-particulier">Remplir une demande</Button>
+        answer: `<br/><Button href="https://datapass.api.gouv.fr/api-particulier?demarche=odyssee-pandore">Remplir une demande</Button>
         `,
         },
         {
         choices: [
             'Technocarte',
         ],
-        answer: 
-        `<br/><Button href="https://datapass.api.gouv.fr/api-particulier">Remplir une demande</Button>
+        answer:
+        `<br/><Button href="https://datapass.api.gouv.fr/api-particulier?demarche=technocarte">Remplir une demande</Button>
         `,
         },
         {
@@ -183,14 +183,39 @@ export const pathEligible = {
         ],
         answer: `<br/><Button href="https://datapass.api.gouv.fr/api-particulier">Remplir une demande</Button>
         `,
-        }, 
+        },
         {
         choices: [
-            'Autre',
+             'Coexya',
         ],
-        answer: `<br/><Button href="https://datapass.api.gouv.fr/api-particulier">Remplir une demande</Button>
+        answer: `<br/><Button href="https://datapass.api.gouv.fr/api-particulier?demarche=Coexya">Remplir une demande</Button>
         `,
-            }, 
+        },
+        {
+        choices: [
+            'Libreair',
+        ],
+        answer: `<br/><Button href="https://datapass.api.gouv.fr/api-particulier?demarche=Libreair">Remplir une demande</Button>
+        `,
+        },
+        {
+        choices: [
+            'Agedi',
+        ],
+        answer: `<br/><Button href="https://datapass.api.gouv.fr/api-particulier?demarche=agedi">Remplir une demande</Button>
+        `
+        },
+        {
+          choices: ['**Votre éditeur ne figure pas dans cette liste**'],
+          answer: `**Vous êtes éligible mais votre éditeur n’a pas intégré l’API&nbsp;Particulier <span role="img" aria-label="émoji loupe">🔎</span>**
+          <br/>
+          Déposez une demande pour expliciter vos besoins et votre situation. L’équipe API Particulier vous contactera pour identifier des pistes de solutions, et contactera le cas échéant votre éditeur (pensez donc bien à préciser le nom de votre éditeur et ses coordonnées).
+          <br/>
+          <Button href='https://datapass.api.gouv.fr/api-particulier' target='_blank' rel="noreferrer noopener" alt>Déposer une demande</Button>
+          <br/>
+          **Nota :** L’API Particulier s’utilise au travers d’un logiciel métier, votre éditeur vous met probablement à disposition un logiciel de ce type.
+          <br/>
+          En revanche, comme ce dernier n’a pas encore intégré l’API Particulier, les instructeurs de l’API Particulier devront, entre autres, vérifier si votre éditeur a les <External href='https://particulier.api.gouv.fr/faq#quels-sont-les-prerequis-techniques-pour-utiliser-l-api'>prérequis techniques</External> pour utiliser l’API Particulier.`,
+        },
     ],
   };
-  

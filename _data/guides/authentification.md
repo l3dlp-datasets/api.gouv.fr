@@ -11,6 +11,7 @@ api:
   - AgentConnect
   - API Statut Etudiant
   - API Statut étudiant boursier
+  - MonComptePro
 ---
 
 ## Dans quel cas l'authentification des personnes ou des organisations est nécessaire ?
@@ -36,9 +37,9 @@ Plutôt que de demander des justificatifs et de les vérifier manuellement, MonC
 
 Certains logiciels et services en ligne sont réservés aux agents de l’État, d'autres sont accessibles uniquement aux professionnels de la santé. Lors de la création de compte pour accéder à ces applications, il est possible d'authentifier les utilisateurs de manière sécurisée :
 
-- [AgentConnect](/les-api/agent-connect) pour les agents de l'administration centrale,
+- [AgentConnect](/les-api/agent-connect) pour les agents de l'État,
 - [Pro Santé Connect](/les-api/api-pro-sante-connect) pour les professionnels de la sphère sanitaire et sociale,
-- [MonComptePro](https://moncomptepro.beta.gouv.fr/partenaire) pour les agents des collectivités territoriales et l’ensemble des professionnels.
+- [MonComptePro](https://moncomptepro.beta.gouv.fr/partenaire) pour les agents l'État et l’ensemble des professionnels.
 
 ## Quelles API utiliser pour authentifier des personnes ou des organisations ?
 
@@ -49,7 +50,7 @@ Certains logiciels et services en ligne sont réservés aux agents de l’État,
 | Professionnels de la santé             | ❌             | ❌            | ❌            | ✅               |
 | Entreprises                            | ❌             | ❌            | ✅            | ❌               |
 | Agents de l'administration centrale    | ❌             | ✅            | ✅            | ❌               |
-| Agents des collectivités territoriales | ❌             | ❌            | ✅            | ❌               |
+| Agents des collectivités territoriales | ❌             | ✅            | ✅            | ❌               |
 
 ## Quid de ProConnect ?
 
@@ -65,4 +66,4 @@ Les API d’authentification sont réservées aux administrations et à leurs é
 
 #### [🏥 API Pro Santé Connect](/les-api/api-pro-sante-connect)
 
-#### [🏢 API MonComptePro](https://moncomptepro.beta.gouv.fr/partenaire)
+#### [🏢 API MonComptePro](/les-api/moncomptepro)

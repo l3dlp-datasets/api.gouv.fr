@@ -56,9 +56,6 @@
       what: BDM
       path: /les-api/api_bdm
     - type: ADD_API
-      what: Registre National du Commerce et des Sociétés
-      path: /les-api/api-rncs
-    - type: ADD_API
       what: Professionnels RGE
       path: /les-api/api_professionnels_rge
     - type: ADD_API
@@ -154,7 +151,7 @@
 2021:
   1:
     - type: ADD_API
-      what: La Bonne Alternance
+      what: La bonne alternance
       path: /les-api/api-la-bonne-alternance
   3:
     - type: ADD_API
@@ -216,16 +213,16 @@
       path: /les-api/api-sudoc
   8:
     - type: ADD_API
-      what: Référentiel des agences par Pôle emploi
+      what: Référentiel des agences par France Travail
       path: /les-api/api-agences-pole-emploi
     - type: ADD_API
-      what: Anotéa par Pôle emploi
+      what: Anotéa par France Travail
       path: /les-api/api-anotea
     - type: ADD_API
-      what: Eligibilité aux aides à l'emploi (Clara) par Pôle emploi
+      what: Eligibilité aux aides à l'emploi (Clara) par France Travail
       path: /les-api/api-clara
     - type: ADD_API
-      what: Répertoire Opérationnel des Métiers et des Emplois par Pôle emploi
+      what: Répertoire Opérationnel des Métiers et des Emplois par France Travail
       path: /les-api/api-rome
 
   9:
@@ -335,10 +332,10 @@
       path: /les-api/api-mobilic
   8:
     - type: ADD_API
-      what: Indemnisation Pôle Emploi, par Pôle Emploi
+      what: Indemnisation France Travail, par France Travail
       path: /les-api/api-indemnisation-pole-emploi
     - type: ADD_API
-      what: Statut demandeur d'emploi (FranceConnect), par Pôle Emploi
+      what: Statut demandeur d'emploi (FranceConnect), par France Travail
       path: /les-api/api-statut-demandeur-emploi
     - type: ADD_API
       what: Ecobalyse, par le Ministère de la Transition Ecologique
@@ -361,12 +358,6 @@
       what: Base nationale des défibrillateurs, par le Ministère de la Santé
       path: /les-api/api-defibrillateurs
     - type: ADD_API
-      what: Services publics plus - structures
-      path: /les-api/api-services-publics-plus-structures
-    - type: ADD_API
-      what: Services publics plus - expériences
-      path: /les-api/api-services-publics-plus-experiences
-    - type: ADD_API
       what: Data subventions, par la DINUM
       path: /les-api/api-data-subventions
   10:
@@ -376,9 +367,6 @@
     - type: ADD_API
       what: Ma Sécurité, par le Service des Technologies et des Systèmes d'Information de la Sécurité Intérieure
       path: /les-api/api-ma-securite
-    - type: ADD_API
-      what: Rendez-vous permis, par le Ministère de l'Intérieur
-      path: /les-api/api-permis-conduire
     - type: ADD_API
       what: Données locales de consommation d'énergie, par le SDES
       path: /les-api/api-donnees-locales-energie
@@ -392,9 +380,34 @@
     - type: ADD_API
       what: Accès Libre, par le Ministère de la Transition Ecologique
       path: /les-api/api-acces-libre
+    - type: ADD_API
+      what: Evènements par France Travail
+      path: /les-api/api-evenements-pole-emploi
   12:
     - type: ADD_API
-      what: Données foncières par le CEREMA
+      what: Smart Verify, par IN Groupe (Imprimerie Nationale)
+      path: /les-api/api-smart-verify
+    - type: ADD_API
+      what: Services publics plus - structures
+      path: /les-api/api-services-publics-structures
+    - type: ADD_API
+      what: Services publics plus - expériences
+      path: /les-api/api-services-publics-experiences
+    - type: ADD_API
+      what: Services publics plus - résultats, par la DITP
+      path: /les-api/api-services-publics-resultats
+    - type: ADD_API
+      what: Accès à l'emploi, par France Travail
+      path: /les-api/api-acces-emploi
+    - type: ADD_API
+      what: Informations sur l'emploi dans un territoire, par France Travail
+      path: /les-api/api-informations-emploi-territoire
+    - type: ADD_API
+      what: Marché du travail, par France Travail
+      path: /les-api/api-marche-travail
+    - type: ADD_API
+      what: Sortants de formation et accès à l'emploi, par France Travail
+      path: /les-api/api-formation-acces-emploi
     - type: ADD_API
       what: Prestations sociales par la Direction de la Sécurité Sociale
     - type: ADD_API
@@ -402,13 +415,99 @@
 2023:
   1:
     - type: ADD_API
+      what: Transparence Santé, par la Direction Générale de la Santé
+      path: /les-api/api-transparence-sante
+    - type: ADD_API
+      what: API QuiForme, par Carif-Oref
+      path: /les-api/api_quiforme
+  2:
+    - type: ADD_API
+      what: MonComptePro, par la DINUM
+      path: /les-api/moncomptepro
+    - type: ADD_API
+      what: GRDF ADICT, par GRDF
+      path: /les-api/api-grdf-adict
+    - type: ADD_API
+      what: Données foncières par le CEREMA
+      path: /les-api/api-donnees-foncieres
+  3:
+    - type: ADD_API
+      what: DUME, par l'AIFE
+      path: /les-api/api-dume
+    - type: ADD_API
+      what: Scolarité, par le Ministère de l'Education Nationale
+    - type: ADD_API
       what: SIPSI (déclaration des travailleurs étrangers) par le Ministère du Travail
     - type: ADD_API
       what: Quotient Familial, par la MSA
     - type: ADD_API
       what: Famille nombreuse, par le Ministère des Transports
+    - type: ADD_API
+      what: Courtier Fonctionnel SFiP, par la DGFiP
+      path: /les-api/api-sfip
+  6:
+    - type: INFO
+      what: |
+        Mise à jour de [l'API Structures de l'inclusion](/les-api/api-structures-inclusion) : elle est désormais rattachée au producteur Plateforme de l'inclusion
+    - type: ADD_API
+      what: data·inclusion, par la Plateforme de l'inclusion
+      path: /les-api/api-data-inclusion
+  11:
+    - type: ADD_API
+      what: IMPRIM'FIP, par la DGFiP
+      path: /les-api/api-imprimfip
+  12:
+    - type: ADD_API
+      what: API Annuaire de l’administration et des services publics, par la DILA
+      path: /les-api/api-annuaire-administration-services-publics
+2024:
   3:
     - type: ADD_API
-      what: Scolarité, par le Ministère de l'Education Nationale
-
+      what: Data ES, par le Ministère des Sports et des Jeux Olympiques et Paralympiques
+      path: /les-api/api-data-es
+    - type: ADD_API
+      what: Data Inclusion, par la Plateforme de l'inclusion
+      path: /les-api/api-data-inclusion
+    - type: ADD_API
+      what: Les emplois de l'inclusion, par la Plateforme de l'inclusion
+      path: /les-api/api-emplois-inclusion
+    - type: ADD_API
+      what: Le marché de l'inclusion, par la Plateforme de l'inclusion
+      path: /les-api/api-marche-inclusion.md
+    - type: ADD_API
+      what: Immersion facilitée, par la Plateforme de l'inclusion
+      path: /les-api/api-immersion-facilitee
+    - type: ADD_API
+      what: France Chaleur Urbaine, par le Ministère de la Transition écologique et solidaire
+      path: /les-api/api-france-chaleur-urbaine
+  4:
+    - type: ADD_API
+      what: Diffusion des fichiers de theses.fr, par l'Agence bibliographique de l'enseignement supérieur
+      path: /les-api/api-diffusion-fichiers-these
+    - type: ADD_API
+      what: Interroger les Données de theses.fr, par l'Agence bibliographique de l'enseignement supérieur
+      path: /les-api/api-interroger-donnees-these
+    - type: ADD_API
+      what: Export des Données de theses.fr, par l'Agence bibliographique de l'enseignement supérieur
+      path: /les-api/api-export-donnees-these
+    - type: ADD_API
+      what: Mes Aides Reno, par la Direction Interministérielle du Numérique
+      path: /les-api/api-mes-aides-reno
+  5:
+    - type: ADD_API
+      what: Fonds Vert, par la Direction générale de l'aménagement, du logement et de la nature
+      path: /les-api/api-fonds-vert
+    - type: ADD_API
+      what: Sudocuh, par la Direction générale de l'aménagement, du logement et de la nature
+      path: /les-api/api-sudocuh
+    - type: ADD_API
+      what: ECLAIRE, par l'Agence du Numérique en Santé (ANS)
+      path: /les-api/api-eclaire
+    - type: ADD_API
+      what: VigiEau, par le Ministère de la Transition écologique et solidaire
+      path: /les-api/api-vigieau
+  6:
+    - type: ADD_API
+      what: INES, par le Ministère de l'Enseignement Supérieur et de la Recherche
+      path: /les-api/api-ines
 ---

@@ -15,20 +15,16 @@ access_page:
 
       Pour remplir votre demande, vous aurez uniquement besoin de :
 
-      - Créer un compte api.gouv pour accéder au formulaire DataPass ;
       - Attestation fiscale ;
       - Attestation sociale.
 
       <Button href="https://datapass.api.gouv.fr/api-declaration-auto-entrepreneur">Remplir une demande</Button>
   - who:
-      - Un auto-entrepreneur
-    is_eligible: 0
+      - Un tiers déclarant
+    is_eligible: 1
     description: |
-      Les auto-entrepreneurs peuvent accéder à l'API sous certaines conditions. 
-
       Pour remplir votre demande, vous aurez uniquement besoin de :
 
-      - Créer un compte api.gouv pour accéder au formulaire DataPass ;
       - Attestation fiscale ;
       - Attestation sociale.
 
@@ -39,6 +35,13 @@ access_page:
     is_eligible: -1
     description: |
       Vous n'êtes pas autorisé à accéder à ces données.
+
+      <Button href="/rechercher-api">Revenir à la recherche</Button>
+  - who:
+      - Un auto-entrepreneur
+    is_eligible: -1
+    description: |
+      Même si l'API Tierce Déclaration concerne les auto-entrepreneurs, elle ne vous est pas directement destinée. Peut-être cherchez vous à accéder à l'[API Tiers de Prestation](https://api.gouv.fr/les-api/api-tiers-de-prestation), pour que vos clients bénéficient de l'avance immédiate de crédit d'impôt ?
 
       <Button href="/rechercher-api">Revenir à la recherche</Button>
 contact_link: contact.tiercedeclaration@urssaf.fr
@@ -96,7 +99,7 @@ Un tiers déclarant est une personne physique ou morale qui assure, à titre pro
 
 L’API Tierce Déclaration auto-entrepreneur est une API REST gratuite avec un accès restreint qui utilise la cinématique d’authentification Oauth2 Client Credentials.
 
-Pour accéder à cette API gratuite, il faut en faire la demande [via le formulaire de demande de souscription](https://portailapi.urssaf.fr/fr/component/apiportal/registration) ou [via email](mailto:contact.tiercedeclaration@urssaf.fr) et signer la licence d’utilisation.
+Pour accéder à cette API gratuite, il faut en faire la demande [via le formulaire de demande de souscription](https://api.gouv.fr/les-api/api-declaration-auto-entrepreneur/demande-acces).
 
 Une fois le dossier validé, un accès API bac à sable puis un accès API production sont fournis.
 

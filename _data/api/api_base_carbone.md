@@ -1,5 +1,5 @@
 ---
-title: API Base Carbone®
+title: API Base Carbone
 tagline: Les facteurs d'émissions de GES, nécessaires à la réalisation d’un bilan d’émissions de gaz à effet de serre
 external_site: https://data.ademe.fr/datasets/base-carbone(r)
 is_open: 1 # 1 means API is fully open
@@ -14,15 +14,15 @@ keywords:
 rate_limiting_resume: 10 appels / seconde / IP
 themes:
   - Environnement
-contact_link: https://www.ademe.fr/content/contacter
-doc_tech_link: https://data.ademe.fr/data-fair/api/v1/datasets/base-carbone(r)/api-docs.json
-doc_tech_external: https://data.ademe.fr/datasets/base-carbone(r)
+contact_link: centrederessourcesges@ademe.fr
+doc_tech_link: https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/api-docs.json
+doc_tech_external: https://data.ademe.fr/datasets/base-carboner
 datagouv_uuid:
   - 5f5605e63ee74d0034395703
 last_update: 27/07/2020
 ---
 
-La Base Carbone® est une base de données publique de facteurs d'émissions, nécessaires à la réalisation d’un bilan d’émissions de gaz à effet de serre (GES) et plus généralement tout exercice de comptabilité carbone.
+La Base Carbone est une base de données publique de facteurs d'émissions, nécessaires à la réalisation d’un bilan d’émissions de gaz à effet de serre (GES) et plus généralement tout exercice de comptabilité carbone.
 
 ### À quoi sert l’API Base Carbone ?
 
@@ -47,7 +47,7 @@ Administrée par l'ADEME, sa gouvernance est multi acteurs : 14 membres la compo
 
 Retrouvez le descriptif complet de la Base dans <External href="https://www.bilans-ges.ademe.fr/fr/accueil/contenu/index/page/presentation/siGras/0">la rubrique « Base Carbone » du site Bilans GES</External>, ainsi que toute sa documentation explicitant périmètre et sources des données proposées pour s’assurer d’une utilisation robuste des données.
 
-Les données sont mises à jour régulièrement et accessibles sur le <External href="https://data.ademe.fr/datasets/base-carbone(r)">portail Open Data de l'ADEME</External>.
+Les données sont mises à jour régulièrement et accessibles sur le <External href="https://data.ademe.fr/datasets/base-carboner">portail Open Data de l'ADEME</External>.
 
 ### À propos de l'Open Data a l’ADEME
 

@@ -14,7 +14,7 @@ const About: React.FC = () => (
     canonical={`https://api.gouv.fr/apropos`}
   >
     <div className="text-wrapper text-style">
-      <h1 className="layout-center">Api.gouv.fr, à quoi ça sert ?</h1>
+      <h1 className="layout-center">api.gouv.fr, à quoi ça sert ?</h1>
       <p>
         Ce site référence les API du service public, mises à la disposition des
         collectivités, des ministères et des entreprises pour construire des
@@ -45,7 +45,7 @@ const About: React.FC = () => (
           </a>
           {', '}
           leur logiciel de paie communique directement les données de leurs
-          employés à l’Etat grace à... une API !
+          employés à l’Etat grâce à... une API !
         </p>
         <p>
           Afin d’aider toutes les organisations qui veulent{' '}
@@ -97,7 +97,7 @@ const About: React.FC = () => (
         <p>
           D’autres données, comme par exemple les données fiscales, sont
           sensibles et doivent être protégées.{' '}
-          <b>Ces données ne sont pas accessibles à tous</b> et seuls les
+          <b>Ces données ne sont pas accessibles à tous</b> et seules les
           organisations habilitées sont autorisées à y accéder.
         </p>
         <p>

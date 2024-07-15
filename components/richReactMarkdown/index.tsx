@@ -9,7 +9,6 @@ import {
 } from '../../uiComponents';
 import Quote from '../../uiComponents/quote';
 import TeamHelpWidget from '../teamHelpWidget';
-import ApiRnaWidget from '../apiWidgets/apiRna';
 import ApiSireneWidget from '../apiWidgets/apiSirene';
 import DatagouvWidget from '../widgets/datagouv';
 import FlatFileWidget from '../widgets/flatFile';
@@ -40,7 +39,7 @@ const Grid: React.FC<PropsWithChildren<{}>> = props => (
 
 const NextSteps = ({
   is_editeur = false,
-  service_description = `de la description du service justifiant une simplification pour les citoyens`,
+  service_description = `de la description du service justifiant une simplification pour les usagers`,
 }) => (
   <>
     <p>
@@ -48,8 +47,8 @@ const NextSteps = ({
     </p>
     <ul>
       <li>de votre numéro SIRET</li>
-      <li>du cadre juridique</li>
       <li>{service_description}</li>
+      <li>du cadre juridique</li>
       <li>des coordonnées de l'équipe</li>
       <li>
         des coordonnées de votre délégué à la protection des données et
@@ -76,7 +75,6 @@ const RichReactMarkdown: React.FC<{ source: string; addAnchor?: boolean }> = ({
         Grid: Grid,
         Centered: Centered,
         ContactUs: TeamHelpWidget,
-        ApiRnaWidget: ApiRnaWidget,
         FlatFile: FlatFileWidget,
         ApiSireneWidget: ApiSireneWidget,
         Datagouv: DatagouvWidget,

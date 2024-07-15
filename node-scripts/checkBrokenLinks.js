@@ -23,7 +23,7 @@ const IGNORE = [
   'https://geo.pays-de-brest.fr/zapp/Pages/Demande-compte.aspx',
   'https://www.ademe.fr/content/contacter', // weird
   'https://www.insee.fr/fr/statistiques/3530678',
-  'https://gouvernement.fr',
+  'https://info.gouv.fr',
   'https://www.legifrance.gouv.fr/',
   'https://legifrance.gouv.fr',
 ];
@@ -46,13 +46,11 @@ const urlChecker = new blc.SiteChecker(
         return;
       }
 
-      // legifrance too slow
-      if (result.url.original.indexOf('www.legifrance.gouv.fr') > -1) {
-        return;
-      }
-
-      // linkedin pain in the ***
-      if (result.url.original.indexOf('www.linkedin.com') > -1) {
+      if (
+        result.url.original.indexOf('www.legifrance.gouv.fr') > -1 ||
+        result.url.original.indexOf('www.linkedin.com') > -1 ||
+        result.url.original.indexOf('twitter.com') > -1
+      ) {
         return;
       }
 

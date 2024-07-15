@@ -23,8 +23,12 @@ monitoring_description: |
   Une supervision du service en temps réel est disponible à cette adresse.
 contact_link: recherche-entreprises@api.gouv.fr
 doc_tech_link: https://recherche-entreprises.api.gouv.fr/docs/swagger.json
+doc_tech_external: https://recherche-entreprises.api.gouv.fr/docs/
 datagouv_uuid:
   - 5b7ffc618b4c4169d30727e0
+  - 5c34c4d1634f4173183a64f1
+  - 62bd63b70ff1edf452b83a6b
+  - 5fc9b4729dbf684fecb13bae
 visits_2019: 10000
 last_update: 23/05/2022
 content_intro: |
@@ -34,7 +38,7 @@ content_intro: |
 
   L'API permet de rechercher une entreprise de deux manières :
 
-  - Recherche textuelle
+  - Recherche textuelle (dénomination, adresse, dirigeants et élus)
   - Recherche géographique
 ---
 
@@ -73,5 +77,12 @@ Pour en savoir plus sur les filtres avancés, consultez la [documentation.](/doc
 
 Pour vous abonner à l'infolettre pour être informé des mises à jour de la part de l’équipe :
 
-<Button href="https://app.mailjet.com/widget/iframe/zR1/NZO">Abonnez-vous à l'infolettre</Button>
+<Button href="https://2f62ff46.sibforms.com/serve/MUIFAO95z3V-BJo1feDe7qoHnkmSCfysBZZFjIFSjvvnqZ1C8aAGCT1-vESBVRjnjM8fKD_Mt7Q0ENMgGon61yySA7u3dn8MS3rdd5Ax_aQ7ORuB5tglGXJ00VEnG5Tp5ggraqa5x6oPoyaleNDDkDmijlzwmSxWRs5zfSubvr3dGQMlxymwf2uU4xY1N51BjN5F5vvNMDu-s9IT">Abonnez-vous à l'infolettre</Button>
+
+
+## Politique de confidentialité
+
+Consulter [la politique de confidentialité](https://annuaire-entreprises.data.gouv.fr/vie-privee).
+
+
 

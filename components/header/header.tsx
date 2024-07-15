@@ -2,13 +2,11 @@ import React, { Fragment } from 'react';
 
 import { logCTA } from '../../utils/client/analytics';
 import { apiLogo } from './logos';
-import SurveyModule from '../surveyModule';
 const DATAPASS_URL =
   process.env.NEXT_PUBLIC_DATAPASS_URL || 'https://datapass.api.gouv.fr';
 
 export const HEADER_PAGE = {
   APIS: 'apis',
-  FROM_SIGNUP: 'requests',
   SERVICES: 'services',
   GUIDES: 'guides',
   ABOUT: 'about',
@@ -69,7 +67,13 @@ const Header = ({ headerKey = 'home' }) => {
               <div className="fr-header__tools-links">
                 <ul className="fr-links-group">
                   <li className="external">
-                    <SurveyModule />
+                  <a
+                      className="fr-link fr-fi-question-fill"
+                      href="/parcours-client?source=header"
+                      onClick={() => logCTA('CTA header')}
+                    >
+                      Une question ?
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -94,29 +98,19 @@ const Header = ({ headerKey = 'home' }) => {
             aria-label="Menu principal"
           >
             <ul className="fr-nav__list">
-              {headerKey !== HEADER_PAGE.FROM_SIGNUP ? (
-                <>
-                  {HEADER.map(item => (
-                    <Fragment key={item.href}>
-                      <li
-                        className={`fr-nav__item ${
-                          headerKey === item.key ? 'current' : ''
-                        }`}
-                      >
-                        <a className="fr-nav__link" href={`${item.href}`}>
-                          {item.txt}
-                        </a>
-                      </li>
-                    </Fragment>
-                  ))}
-                </>
-              ) : (
-                <li className="fr-nav__item">
-                  <a className="fr-nav__link" href={`${DATAPASS_URL}`}>
-                    Mes demandes
-                  </a>
-                </li>
-              )}
+              {HEADER.map(item => (
+                <Fragment key={item.href}>
+                  <li
+                    className={`fr-nav__item ${
+                      headerKey === item.key ? 'current' : ''
+                    }`}
+                  >
+                    <a className="fr-nav__link" href={`${item.href}`}>
+                      {item.txt}
+                    </a>
+                  </li>
+                </Fragment>
+              ))}
             </ul>
           </nav>
         </div>

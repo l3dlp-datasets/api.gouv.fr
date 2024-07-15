@@ -11,15 +11,16 @@ api:
   - API Statut Etudiant
   - API Statut étudiant boursier
   - API Indemnités journalières de la CNAM
-  - API Indemnisation Pôle emploi
+  - API Indemnisation France Travail
   - API statut demandeur d'emploi
+  - API complémentaire santé solidaire
 ---
 
 FranceConnect permet au citoyen de s'authentifier à de nombreux services de l'administration. Ce dispositif permet d'utiliser un compte existant sur impots.fr ou ameli.fr par exemple, afin d'accéder à tous les services de l'administration (<External href="https://franceconnect.gouv.fr/partenaires">en savoir plus sur FranceConnect</External>).
 
 Les API FranceConnectées sont des API qui permettent de transmettre - en plus des données d'identité transmises par FranceConnect - d'autres données personnelles du citoyen lorsqu'il utilise FranceConnect dans sa démarche.
 
-Une API FranceConnecté s'utilise obligatoirement avec FranceConnect. C'est-à-dire que dans votre service numérique, l'utilisateur devra se FranceConnecter pour obtenir les données de l'API.
+Une API FranceConnectée s'utilise obligatoirement avec FranceConnect. C'est-à-dire que dans votre service numérique, l'utilisateur devra se FranceConnecter pour obtenir les données de l'API.
 
 ## En quoi ça change tout ?
 
@@ -55,18 +56,16 @@ L'aide juridictionnelle est une prise en charge par l'État des frais judiciaire
 
 | Nom       | Description                                         |Statut   |Dispo sans FranceConnect | Administration|
 | --------- | --------- |----------------------------------------------------|-----------------|--------- |
-| [API Impôt particulier](https://api.gouv.fr/les-api/impot-particulier)  | Revenus déclarés auprès de l'administration fiscale |✅ En production   |[API Impôt particulier](https://api.gouv.fr/les-api/impot-particulier) - [API  particulier](https://api.gouv.fr/les-api/api-particulier)   |DGFiP   |
-| [API Indemnités Journalières](https://api.gouv.fr/les-api/api-indemnites-journalieres-cnam)   | Montant des indemnités journalières de l'Assurance Maladie payé à un assuré sur une période|✅ En production   |Non prévu |CNAM |
-| [API de droits à l'Assurance Maladie](https://api.gouv.fr/les-api/api_ameli_droits_cnam) | Droits d’un individu ou d’une famille (enfants rattachés), gérés par le régime général de l’Assurance Maladie |✅ En production  |Non prévu |CNAM   |
-| [API Statut étudiant](https://api.gouv.fr/les-api/api-statut-etudiant)| Statut de l’inscription dans un établissement de l’enseignement supérieur |✅ En production  |[API  particulier](https://api.gouv.fr/les-api/api-particulier)|MESRI   |
-| [API Statut étudiant boursier](https://api.gouv.fr/les-api/api-statut-etudiant-boursier)| Statut d’étudiant boursier  |✅ En production  | [API  particulier](https://api.gouv.fr/les-api/api-particulier) |CNOUS / MESRI                                          |
-| [API statut demandeur d'emploi](/les-api/api-statut-demandeur-emploi)   |Statut et catégorie (A,B,C,D)   |✅ En production |[API  particulier](https://api.gouv.fr/les-api/api-particulier)| Pôle Emploi                        |
-| [API Indemnités Pôle emploi](/les-api/api-indemnisation-pole-emploi)   | Montant des indemnités versées par pôle emploi   |✅ En production|⌛️ bientôt disponible |Pôle Emploi                        |
-| API Prestations sociales   | Inscription au RSA, bénéficiaires de la CSS (complémentaire sociale solidaire) |⌛️ bientôt disponible   |⌛️ bientôt disponible|DSS |
-|API scolarité | attestation de socolarité, apprenti, boursier |Mars 2023  |fin 2022|MEN|
+| [API Impôt particulier](https://api.gouv.fr/les-api/impot-particulier)  | Revenus déclarés auprès de l'administration fiscale |✅ Disponible   |[API Impôt particulier](https://api.gouv.fr/les-api/impot-particulier) - [API  particulier](https://api.gouv.fr/les-api/api-particulier)   |DGFiP   |
+| [API Indemnités Journalières](https://api.gouv.fr/les-api/api-indemnites-journalieres-cnam)   | Montant des indemnités journalières de l'Assurance Maladie payé à un assuré sur une période|✅ Disponible   |Non prévu |CNAM |
+| [API de droits à l'Assurance Maladie](https://api.gouv.fr/les-api/api_ameli_droits_cnam) | Droits d’un individu ou d’une famille (enfants rattachés), gérés par le régime général de l’Assurance Maladie |✅ Disponible  |Non prévu |CNAM   |
+| [API Statut étudiant](https://api.gouv.fr/les-api/api-statut-etudiant)| Statut de l’inscription dans un établissement de l’enseignement supérieur |✅ Disponible  |[API  particulier](https://api.gouv.fr/les-api/api-particulier)|MESRI   |
+| [API Statut étudiant boursier](https://api.gouv.fr/les-api/api-statut-etudiant-boursier)| Statut d’étudiant boursier  |✅ Disponible  | [API  particulier](https://api.gouv.fr/les-api/api-particulier) |CNOUS / MESRI                                          |
+| [API statut demandeur d'emploi](/les-api/api-statut-demandeur-emploi)   |Statut et catégorie (A,B,C,D)   |✅ Disponible |[API  particulier](https://api.gouv.fr/les-api/api-particulier)| France Travail                        |
+| [API Liste de paiements France Travail](/les-api/api-indemnisation-pole-emploi)   | Montants des paiements des allocations ou des aides versées par France Travail   |✅ Disponible | [API  particulier](https://particulier.api.gouv.fr/catalogue/pole_emploi/indemnites) |France Travail                        |
+| [API  Complémentaire santé solidaire](https://particulier.api.gouv.fr/catalogue/cnaf_msa/complementaire_sante_solidaire)   | bénéficiaires de la C2S avec ou sans participation | ✅ Disponible |[API  particulier](https://particulier.api.gouv.fr/catalogue/cnaf_msa/complementaire_sante_solidaire) |DSS |
+|[API statut élève scolarisé et boursier](https://particulier.api.gouv.fr/catalogue/education_nationale/statut_eleve_scolarise) | Statut élève scolarisé au primaire et secondaire ; et statut boursier |Janvier 2024 |✅ Disponible| Ministère de l'éducation nationale |
 |API quotient familial | Quotient familial, composition familiale|En cours de spécification  | [API  particulier](https://api.gouv.fr/les-api/api-particulier)|CNAF|
-|API quotient familial| Quotient familial, composition familiale |  2023|En cours de spécification|MSA|
-|API famille nombreuse| carte famille nombreuse |  2023|2023|Ministère des transports|
 
 ### Comment ça marche ?
 
