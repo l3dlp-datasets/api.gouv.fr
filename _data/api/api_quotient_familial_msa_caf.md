@@ -1,5 +1,5 @@
 ---
-title: API Quotient familial MSA & CAF # 📍 Nom commercial de l'API, privilégier un nom court.
+title: API Quotient familial MSA & CAF | Bouquet API Particulier # 📍 Nom commercial de l'API, privilégier un nom court.
 tagline: Entités administratives, simplifiez les démarches des particuliers en récupérant pour eux leur quotient familial # 📍 Une phrase pour résumer le service rendu par l'API. Si votre API est uniquement accessible à certaines organisation, spécifiez-le dès maintenant.
 producer: cnaf-msa # 📍 Identifiant du fournisseur de la donnée trouvable ou ajoutable dans le dossier `api_gouv/_data/producteurs`, pour en savoir plus consulter le read.me.
 contact_link: api-particulier@api.gouv.fr # 📍 Adresse e-mail que les usagers peuvent utiliser pour vous contacter.
@@ -38,7 +38,7 @@ access_page:
       <Button href="/rechercher-api">Rechercher une autre API</Button>
 
       Si vous êtes **éditeur de logiciels pour des acteurs publics, c'est à vos utilisateurs collectivité ou administration de faire une demande d'habilitation.** En revanche, vous pouvez nous demander de vous référencer sur un cas d'usage afin de proposer des formulaires pré-remplis et ainsi simplifier l'expérience de vos clients publics.
-      <External href="https://form.typeform.com/to/GU90FCIE">Demander à être référencé</External>
+      <External href="https://form.typeform.com/to/OJ4rkf5Z">Demander à être référencé</External>
 
   - who:
       - Un éditeur de logiciel
@@ -48,7 +48,7 @@ access_page:
       
       En revanche, vous pouvez nous demander de vous référencer sur un cas d'usage afin de proposer des formulaires pré-remplis et ainsi simplifier l'expérience de vos clients publics : 
 
-      <Button href="https://form.typeform.com/to/GU90FCIE">Demander à être référencé</Button>
+      <Button href="https://form.typeform.com/to/OJ4rkf5Z">Demander à être référencé</Button>
 
       Pour toute autre demande, consultez notre page <External href="https://particulier.api.gouv.fr/faq">FAQ & contact</External>.
       

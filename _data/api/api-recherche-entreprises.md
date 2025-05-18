@@ -18,11 +18,11 @@ rate_limiting_resume: 7 appels / seconde
 rate_limiting_description: |
   Actuellement, le nombre d’appels à l’API est limité à 7 appels par seconde
 uptime: 100
-monitoring_link: https://stats.uptimerobot.com/kXzwzfk7BE
+monitoring_link: https://annuaire-entreprises.data.gouv.fr/donnees/api#recherche-entreprise
 monitoring_description: |
   Une supervision du service en temps réel est disponible à cette adresse.
 contact_link: recherche-entreprises@api.gouv.fr
-doc_tech_link: https://recherche-entreprises.api.gouv.fr/docs/swagger.json
+doc_tech_link: https://recherche-entreprises.api.gouv.fr/openapi.json
 doc_tech_external: https://recherche-entreprises.api.gouv.fr/docs/
 datagouv_uuid:
   - 5b7ffc618b4c4169d30727e0
